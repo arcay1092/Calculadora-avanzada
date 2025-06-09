@@ -1,0 +1,123 @@
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modo claro */
+body.claro {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+body.claro .calculadora {
+  background-color: #ffffff;
+}
+
+body.claro button {
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+/* Modo oscuro */
+body.oscuro {
+  background-color: #000;
+  color: #fff;
+}
+
+body.oscuro .calculadora {
+  background-color: #2c2f4a;
+}
+
+body.oscuro button {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Pantalla display */
+#display {
+  width: 100%;
+  height: 80px;
+  font-size: 36px;
+  margin-bottom: 15px;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #0e101a;
+  color: #0ff;
+  overflow-x: auto;
+}
+
+/* Barra superior */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.barra-superior button {
+  flex: 1;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Fila */
+.fila {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Botones generales */
+button {
+  flex: 1;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button.numero {
+  background-color: #b0b0b0;
+  color: #000;
+}
+
+button.operador {
+  background-color: #888;
+  color: #fff;
+}
+
+button.funcion {
+  background-color: #aeea00;
+  color: #000;
+}
+
+button.igual {
+  background-color: #009688;
+  color: white;
+  font-weight: bold;
+}
