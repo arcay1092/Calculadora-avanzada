@@ -74,7 +74,13 @@
 
 <script>
   function volver() {
-    window.location.href = "/Calculadora-avanzada/";
+    // Si el usuario viene desde la calculadora, volver con el historial del navegador
+    if (document.referrer.includes("Calculadora-avanzada")) {
+      window.history.back();
+    } else {
+      // Si no viene desde la calculadora, redirigir directamente
+      window.location.href = "/Calculadora-avanzada/";
+    }
   }
 </script>
 
