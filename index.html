@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="claro">
-  <div class="calculadora">
+  <div id="calculadora" class="calculadora">
     <div class="barra-superior">
       <button id="botonModo" onclick="cambiarModo()">Modo Oscuro</button>
       <button onclick="mostrarManual()">Manual de uso</button>
@@ -50,7 +50,26 @@
       <button onclick="agregar(')')">)</button>
     </div>
   </div>
+
+  <!-- MANUAL -->
+  <div id="manual" style="display: none; padding: 20px;">
+    <h1>Manual de Uso</h1>
+    <p>Bienvenido a la calculadora científica. Aquí te explicamos cómo usar algunas funciones especiales:</p>
+    <h5>Las funciones seno, coseno y tangente están implementadas solo en radianes.</h5>
+    <ul>
+      <li><strong>Raíz Cuadrada (√):</strong> Escribe primero el número, luego el botón √, y finalmente presiona =</li>
+      <li><strong>Seno (sin):</strong> Escribe el número, luego presiona sin, y después =</li>
+      <li><strong>Coseno (cos):</strong> Escribe el número y luego cos y por último =</li>
+      <li><strong>Tangente (tan):</strong> Escribe el número, luego presiona tan y después =</li>
+      <li><strong>Potencia (xʸ):</strong> Escribe primero la base, luego presiona el botón xʸ, luego coloca el exponente, cierra el paréntesis ) y presiona =</li>
+    </ul>
+    <button onclick="volverACalculadora()">Volver a la calculadora</button>
+    <footer style="margin-top: 30px; color: #17C58F;">
+      <em>Calculadora hecha por Genaro Silva</em><br>
+      Todos los derechos reservados @ARCAY1092
+    </footer>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
-  
