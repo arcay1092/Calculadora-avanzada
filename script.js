@@ -1,4 +1,6 @@
 const display = document.getElementById("display");
+const contenedorCalculadora = document.querySelector(".calculadora");
+const contenedorManual = document.getElementById("manual");
 
 function agregar(valor) {
   display.value += valor;
@@ -71,6 +73,14 @@ function cambiarModo() {
   }
 }
 
+// Mostrar el manual sobre la calculadora
 function mostrarManual() {
-  window.open("manual.html", "_blank");
+  contenedorCalculadora.style.display = "none";
+  contenedorManual.style.display = "block";
+}
+
+// Ocultar el manual y mostrar la calculadora
+function volverACalculadora() {
+  contenedorManual.style.display = "none";
+  contenedorCalculadora.style.display = "flex";
 }
